@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket.IO Client</title>
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+</head>
+
+<body>
+    <div id="messages"></div>
+
+    <script>
+        const socket = io("http://localhost:3000");
+
+        socket.on("chat-channel", (message) => {
+            console.log("Message received:", message);
+            const messagesDiv = document.getElementById("messages");
+            if (messagesDiv) {
+                messagesDiv.innerHTML += `<p>${message.text} - ${message.user}</p>`;
+            } else {
+                console.log("Messages div not found!");
+            }
+        });
+    </script>
+
+</body>
+
+</html>
