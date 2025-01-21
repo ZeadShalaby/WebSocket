@@ -1,7 +1,7 @@
 <br/>
 <p align="center">
   <a href="https://github.com/ZeadShalaby/WebSocket">
-          <img src="https://imgur.com/Z4UhqF4.png?w=1600" alt="Logo" width="880" height="400">
+          <img src="https://imgur.com/Z4UhqF4.png?w=1600" alt="Logo" width="700" height="300">
   </a>
 
 <h3 align="center"> WebSocket Laravel / NodeJS </h3>
